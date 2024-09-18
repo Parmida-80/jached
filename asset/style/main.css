@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Katibeh&family=Lalezar&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h3 {
+  color: #f9dcc4;
+}
+
+body {
+  background: url("../img/b563148d688c1f84695b414788d52e2c.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  margin: 10% auto;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: 80%;
+  border-radius: 10px;
+}
+
+#jacket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px 0 0 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+#jacket img {
+  width: 100px;
+}
+
+#jacket .text {
+  width: 200px;
+}
+
+#jacket .text h1 {
+  color: #dda15e;
+  font-weight: 400;
+  font-style: normal;
+  font-family: cooper black;
+  padding: 10px;
+}
+
+#jacket .text p {
+  font-family: "Katibeh", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f9dcc4;
+}
+
+#jacket .text img {
+  width: 80px;
+}
+
+#Specifications {
+  padding: 30px;
+  border-radius: 0 15px 15px 0;
+}
+
+#Specifications #size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #dda15e;
+}
+
+@media (min-width: 1000px) {
+  body {
+    background: url(../img/Autumn_forest_colorful_wallpaperz.blog.ir.jpg);
+  }
+  .main {
+    margin: 5% auto;
+    width: 1000px;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #jacket {
+    width: 60%;
+    background-color: #ffb9391f;
+  }
+  #jacket img {
+    width: 300px;
+  }
+  #Specifications {
+    background-color: #7b420190;
+  }
+}
+/*# sourceMappingURL=main.css.map */
