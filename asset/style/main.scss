@@ -20,8 +20,9 @@ body {
 .main {
     margin: 10% auto;
     backdrop-filter: blur(5px);
-    width: 80%;
+    width: 90%;
     border-radius: 10px;
+    height: 100%;
 }
 
 #jacket {
@@ -30,30 +31,33 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px;
+    justify-content: space-around;
 
     img {
         width: 100px;
     }
 
-
-
     .text {
         width: 200px;
+
         h1 {
             color: $oarnge;
             font-weight: 400;
             font-style: normal;
             font-family: cooper black;
             padding: 10px;
-            
+
         }
-         p{
+
+        p {
             font-family: "Katibeh", serif;
-  font-weight: 400;
-  font-style: normal;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 25px;
 
             color: $orange_base;
-         }
+        }
+
         img {
             width: 80px;
         }
@@ -67,29 +71,63 @@ body {
 
     padding: 30px;
     border-radius: 0 15px 15px 0;
+}
+#color{
+    display: flex;
+    justify-content: center;
+
+    div{
+        width: 100px;
+        height: 5px;
+        margin: 10px 0;
+
+    }
+
+    div:nth-child(1) {
+        background-color: #ff6300;
+    }
+    div:nth-child(2) {
+        background-color:#c40000;
+    }
+    div:nth-child(3) {
+        background-color: rgb(13, 122, 31);
+    }
+    div:nth-child(4) {
+        background-color: black;
+    }
+    
+    
+
+}
+
+.size{
+    margin: 10px 0;
 
     #size {
         display: flex;
-        justify-content: space-between;
+        justify-content:space-around;
         color: $oarnge;
-
-        h1:hover {}
-
+    
+        h1{
+            margin: 10px 0;
+        }
+    
     }
+    
 }
-
 //////////////Rispansive////////////
-@media (min-width:1000px) {
+@media (min-width:700px) {
 
     body {
         background: url(../img/Autumn_forest_colorful_wallpaperz.blog.ir.jpg);
     }
 
     .main {
-        margin: 5% auto;
-        width: 1000px;
-        height: 500px;
+        margin: 20% auto;
+        width: 600px;
         display: flex;
+        justify-content: space-between;
+        height: 300px;
     }
 
     #jacket {
@@ -97,12 +135,38 @@ body {
         background-color: #ffb9391f;
 
         img {
-            width: 300px;
+            width: 200px;
+            z-index: 1;
         }
     }
 
 
     #Specifications {
         background-color: #7b420190;
+        width: 40%;
     }
+}
+@media (min-width:900px){
+
+    .main{
+        width: 900px;
+        margin: 10% auto;
+        height: 400px;
+        width: 800px;
+        
+    }
+    #Specifications{
+        padding: 50px;
+    }
+    #jacket {
+        width: 60%;
+        background-color: #ffb9391f;
+        padding: 50px;
+
+        img {
+            width: 300px;
+            z-index: 1;
+        }
+    }
+
 }

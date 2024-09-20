@@ -20,8 +20,9 @@ body {
   margin: 10% auto;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  width: 80%;
+  width: 90%;
   border-radius: 10px;
+  height: 100%;
 }
 
 #jacket {
@@ -36,6 +37,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #jacket img {
@@ -58,6 +61,7 @@ body {
   font-family: "Katibeh", serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 25px;
   color: #f9dcc4;
 }
 
@@ -70,37 +74,101 @@ body {
   border-radius: 0 15px 15px 0;
 }
 
-#Specifications #size {
+#color {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#color div {
+  width: 100px;
+  height: 5px;
+  margin: 10px 0;
+}
+
+#color div:nth-child(1) {
+  background-color: #ff6300;
+}
+
+#color div:nth-child(2) {
+  background-color: #c40000;
+}
+
+#color div:nth-child(3) {
+  background-color: #0d7a1f;
+}
+
+#color div:nth-child(4) {
+  background-color: black;
+}
+
+.size {
+  margin: 10px 0;
+}
+
+.size #size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: #dda15e;
 }
 
-@media (min-width: 1000px) {
+.size #size h1 {
+  margin: 10px 0;
+}
+
+@media (min-width: 700px) {
   body {
     background: url(../img/Autumn_forest_colorful_wallpaperz.blog.ir.jpg);
   }
   .main {
-    margin: 5% auto;
-    width: 1000px;
-    height: 500px;
+    margin: 20% auto;
+    width: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 300px;
   }
   #jacket {
     width: 60%;
     background-color: #ffb9391f;
   }
   #jacket img {
-    width: 300px;
+    width: 200px;
+    z-index: 1;
   }
   #Specifications {
     background-color: #7b420190;
+    width: 40%;
+  }
+}
+
+@media (min-width: 900px) {
+  .main {
+    width: 900px;
+    margin: 10% auto;
+    height: 400px;
+    width: 800px;
+  }
+  #Specifications {
+    padding: 50px;
+  }
+  #jacket {
+    width: 60%;
+    background-color: #ffb9391f;
+    padding: 50px;
+  }
+  #jacket img {
+    width: 300px;
+    z-index: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */
